@@ -1,0 +1,53 @@
+Dependencies for Project 'test-sound', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\main.c)(0x61AA39A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/MKL25Z128xxx4-I./RTE/_Target_1-IC:/Users/Dragos/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o ./objects/main.o -MD)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585BD06A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D43D42)
+I (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x61A37DA2)
+I (Uart.h)(0x61AA3829)
+I (Adc.h)(0x61AA3826)
+I (Pit.h)(0x61AA3988)
+F (.\Uart.h)(0x61AA3829)()
+F (.\Uart.c)(0x61AA377B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/MKL25Z128xxx4-I./RTE/_Target_1-IC:/Users/Dragos/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o ./objects/uart.o -MD)
+I (Uart.h)(0x61AA3829)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585BD06A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D43D42)
+I (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x61A37DA2)
+F (.\Adc.h)(0x61AA3826)()
+F (.\Adc.c)(0x61AA3851)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/MKL25Z128xxx4-I./RTE/_Target_1-IC:/Users/Dragos/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o ./objects/adc.o -MD)
+I (Adc.h)(0x61AA3826)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585BD06A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D43D42)
+I (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x61A37DA2)
+F (.\Pit.h)(0x61AA3988)()
+F (.\Pit.c)(0x61AA398E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/MKL25Z128xxx4-I./RTE/_Target_1-IC:/Users/Dragos/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o ./objects/pit.o -MD)
+I (Pit.h)(0x61AA3988)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585BD06A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D43D42)
+I (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x61A37DA2)
+F (RTE\Device\MKL25Z128xxx4\startup_MKL25Z4.s)(0x564470FA)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/Device/MKL25Z128xxx4-I./RTE/_Target_1-IC:/Users/Dragos/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"MKL25Z128xxx4 SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_mkl25z4.o)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.c)(0x564470FA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/MKL25Z128xxx4-I./RTE/_Target_1-IC:/Users/Dragos/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o ./objects/system_mkl25z4.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585BD06A)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
+I (C:\Users\Dragos\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D43D42)
+I (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x61A37DA2)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x61A37DA2)()
