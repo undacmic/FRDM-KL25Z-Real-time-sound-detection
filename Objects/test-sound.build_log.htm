@@ -27,7 +27,81 @@ Project File Date:  12/03/2021
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
+compiling system_MKL25Z4.c...
+Adc.c(1): warning: In file included from...
+./Adc.h(5): warning: no newline at end of file [-Wnewline-eof]
+int calibrareADC0(void); //Calibrarea modului ADC 
+                                                  ^
+Adc.c(21): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+      castigCalibrare = ADC0_CLP0;
+                      ~ ^~~~~~~~~
+C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(587): note: expanded from macro 'ADC0_CLP0'
+#define ADC0_CLP0                                ADC_CLP0_REG(ADC0)
+                                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(309): note: expanded from macro 'ADC_CLP0_REG'
+#define ADC_CLP0_REG(base)                       ((base)->CLP0)
+                                                  ~~~~~~~~^~~~
+Adc.c(35): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+      castigCalibrare = ADC0_CLM0;
+                      ~ ^~~~~~~~~
+C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(594): note: expanded from macro 'ADC0_CLM0'
+#define ADC0_CLM0                                ADC_CLM0_REG(ADC0)
+                                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(316): note: expanded from macro 'ADC_CLM0_REG'
+#define ADC_CLM0_REG(base)                       ((base)->CLM0)
+                                                  ~~~~~~~~^~~~
+Adc.c(56): warning: implicit conversion loses integer precision: 'const volatile uint32_t' (aka 'const volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        return ADC0_RA;
+        ~~~~~~ ^~~~~~~
+C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(572): note: expanded from macro 'ADC0_RA'
+#define ADC0_RA                                  ADC_R_REG(ADC0,0)
+                                                 ^~~~~~~~~~~~~~~~~
+C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(294): note: expanded from macro 'ADC_R_REG'
+#define ADC_R_REG(base,index)                    ((base)->R[index])
+                                                  ^~~~~~~~~~~~~~~~
+Adc.c(59): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+5 warnings generated.
+compiling Adc.c...
+Uart.c(3): warning: no previous extern declaration for non-static variable 'osr' [-Wmissing-variable-declarations]
+uint32_t osr = 15;
+         ^
+Uart.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t osr = 15;
+^
+Uart.c(10): warning: while loop has empty body [-Wempty-body]
+        while(!(UART0->S1 & UART0_S1_TDRE_MASK));
+                                                ^
+Uart.c(10): note: put the semicolon on a separate line to silence this warning
+Uart.c(18): warning: while loop has empty body [-Wempty-body]
+        while(!(UART0->S1 & UART0_S1_RDRF_MASK));
+                                                ^
+Uart.c(18): note: put the semicolon on a separate line to silence this warning
+Uart.c(4): warning: no previous extern declaration for non-static variable 'sbr' [-Wmissing-variable-declarations]
+uint16_t sbr;
+         ^
+Uart.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t sbr;
+^
+Uart.c(5): warning: no previous extern declaration for non-static variable 'temp' [-Wmissing-variable-declarations]
+uint8_t temp;
+        ^
+Uart.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t temp;
+^
+5 warnings generated.
+compiling Uart.c...
 assembling startup_MKL25Z4.s...
+Pit.c(19): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+1 warning generated.
+compiling Pit.c...
+main.c(3): warning: In file included from...
+./Adc.h(5): warning: no newline at end of file [-Wnewline-eof]
+int calibrareADC0(void); //Calibrarea modului ADC 
+                                                  ^
 main.c(8): warning: no previous prototype for function 'PIT_IRQHandler' [-Wmissing-prototypes]
 void PIT_IRQHandler(void)
      ^
@@ -72,59 +146,11 @@ uint32_t dataOverInterval;
 main.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
 uint32_t dataOverInterval;
 ^
-8 warnings generated.
+9 warnings generated.
 compiling main.c...
-Adc.c(19): warning: implicit conversion loses integer precision: 'const volatile uint32_t' (aka 'const volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
-        return ADC0_RA;
-        ~~~~~~ ^~~~~~~
-C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(572): note: expanded from macro 'ADC0_RA'
-#define ADC0_RA                                  ADC_R_REG(ADC0,0)
-                                                 ^~~~~~~~~~~~~~~~~
-C:/Users/Dragos/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include\MKL25Z4.h(294): note: expanded from macro 'ADC_R_REG'
-#define ADC_R_REG(base,index)                    ((base)->R[index])
-                                                  ^~~~~~~~~~~~~~~~
-Adc.c(22): warning: no newline at end of file [-Wnewline-eof]
-}
- ^
-2 warnings generated.
-compiling Adc.c...
-Pit.c(19): warning: no newline at end of file [-Wnewline-eof]
-}
- ^
-1 warning generated.
-compiling Pit.c...
-compiling system_MKL25Z4.c...
-Uart.c(3): warning: no previous extern declaration for non-static variable 'osr' [-Wmissing-variable-declarations]
-uint32_t osr = 15;
-         ^
-Uart.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint32_t osr = 15;
-^
-Uart.c(10): warning: while loop has empty body [-Wempty-body]
-        while(!(UART0->S1 & UART0_S1_TDRE_MASK));
-                                                ^
-Uart.c(10): note: put the semicolon on a separate line to silence this warning
-Uart.c(18): warning: while loop has empty body [-Wempty-body]
-        while(!(UART0->S1 & UART0_S1_RDRF_MASK));
-                                                ^
-Uart.c(18): note: put the semicolon on a separate line to silence this warning
-Uart.c(4): warning: no previous extern declaration for non-static variable 'sbr' [-Wmissing-variable-declarations]
-uint16_t sbr;
-         ^
-Uart.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint16_t sbr;
-^
-Uart.c(5): warning: no previous extern declaration for non-static variable 'temp' [-Wmissing-variable-declarations]
-uint8_t temp;
-        ^
-Uart.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint8_t temp;
-^
-5 warnings generated.
-compiling Uart.c...
 linking...
-Program Size: Code=1576 RO-data=236 RW-data=4 ZI-data=360  
-".\Objects\test-sound.axf" - 0 Error(s), 16 Warning(s).
+Program Size: Code=1696 RO-data=224 RW-data=4 ZI-data=360  
+".\Objects\test-sound.axf" - 0 Error(s), 20 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -151,9 +177,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:2.5.0
-      Include file:  Device\Source\system_MKL25Z4.h
-      Source file:   Device\Source\ARM\startup_MKL25Z4.s
       Source file:   Device\Source\system_MKL25Z4.c
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+      Include file:  Device\Source\system_MKL25Z4.h
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

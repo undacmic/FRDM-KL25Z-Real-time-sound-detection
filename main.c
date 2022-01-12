@@ -8,13 +8,13 @@ uint32_t dataOverInterval;
 void PIT_IRQHandler(void)
 {	
 	/*
-	* Vom considera valoarea maxima obtinuta per interval de 10ms ca fiind egala cu 50000
+	* Vom considera valoarea maxima obtinuta per interval de 1ms ca fiind egala cu 5000
 	* Astfel, vom aplica o regula de 3 simpla pentru a transpune aceasta valoare in intervalul [0,255]
 	* pentru a putea trasnmite prin UART pe portul serial si prelua mai apoi de MATLAB
 	*/
 	
 	PIT_TFLG1 = 0x01; 
-	uint32_t goodValue = (dataOverInterval * 255) / 50000;
+	uint32_t goodValue = (dataOverInterval * 255) / 6000;
 	if(goodValue > 255)
 	{
 			goodValue = 255;
